@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.simple;
+package org.mteng;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,14 +27,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Tests for {@link SampleSimpleApplication}.
- *
- * @author Dave Syer
- */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(SampleSimpleApplication.class)
-public class SpringTestSampleSimpleApplicationTests {
+@SpringApplicationConfiguration(Application.class)
+public class ApplicationTests {
 
 	@Autowired
 	ApplicationContext ctx;

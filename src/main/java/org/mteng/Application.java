@@ -14,24 +14,19 @@
  * limitations under the License.
  */
 
-package sample.simple;
+package org.mteng;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 @SpringBootApplication
-public class SampleSimpleApplication implements CommandLineRunner {
+public class Application {
 
-    @Override
-    public void run(String... args) {
-    }
-
-    public static void main(String[] args) throws Exception {
-        SpringApplication application = new SpringApplication(SampleSimpleApplication.class);
-        application.setApplicationContextClass(AnnotationConfigApplicationContext.class);
-        SpringApplication.run(SampleSimpleApplication.class, args);
-    }
+  public static void main(String[] args) throws Exception {
+    SpringApplication application = new SpringApplication(Application.class);
+    application.setApplicationContextClass(AnnotationConfigApplicationContext.class);
+    SpringApplication.run(Application.class, args);
+  }
 
 }

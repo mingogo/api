@@ -1,4 +1,4 @@
-package sample.simple.domain.Department;
+package org.mteng.domain.Department;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.emptyIterable;
@@ -12,10 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import sample.simple.SampleSimpleApplication;
+import org.mteng.Application;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(SampleSimpleApplication.class)
+@SpringApplicationConfiguration(Application.class)
 public class DepartmentServiceTest extends AbstractTransactionalJUnit4SpringContextTests {
 
   @Autowired

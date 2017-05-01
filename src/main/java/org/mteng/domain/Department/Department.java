@@ -1,4 +1,4 @@
-package sample.simple.domain.Department;
+package org.mteng.domain.Department;
 
 import javax.persistence.*;
 import java.util.Date;

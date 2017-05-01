@@ -1,4 +1,4 @@
-package sample.simple.domain.Department;
+package org.mteng.domain.Department;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
